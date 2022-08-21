@@ -71,6 +71,7 @@ p {
 }
 
 h3 {
+  font-weight: 700;
   font-size: 2.2rem;
   margin: 0 1rem;
   cursor: default;

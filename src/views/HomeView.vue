@@ -17,8 +17,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
-
 export default {
   name: "HomeView",
 };
@@ -69,10 +67,12 @@ export default {
 p {
   font-size: 1.4rem;
   margin: 0 1rem;
+  cursor: default;
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2.2rem;
   margin: 0 1rem;
+  cursor: default;
 }
 </style>

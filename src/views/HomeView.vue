@@ -10,6 +10,9 @@
           sonhos realidade, trazendo através dos móveis planejados o conforto e
           a funcionalidade que o seu lar precisa.
         </p>
+        <p>Sempre buscando a beleza, qualidade e satisfação.</p>
+        <p>Atendemos todo o vale do paraíba e capital.</p>
+        <h3>PRODUTOS 100% MDF</h3>
       </div>
     </div>
   </div>

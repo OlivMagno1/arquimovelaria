@@ -1,7 +1,7 @@
 <template>
   <div class="menuContainer">
     <h1>Arquimovelaria</h1>
-    <button>hambMenu</button>
+    <button><i class="fa-solid fa-bars"></i></button>
   </div>
 </template>
 
@@ -34,9 +34,11 @@ h1 {
 
 button {
   background-color: rgba(0, 0, 0, 0);
+  color: #fff;
 
   border: 0px;
   cursor: pointer;
   margin: 0 3rem;
+  font-size: 1.6rem;
 }
 </style>

@@ -60,27 +60,4 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-
-nav {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
-
-  position: fixed;
-  left: 0;
-  top: 10vh;
-  background-color: red;
-  padding: 30px;
-}
-
-nav a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>

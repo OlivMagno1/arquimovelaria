@@ -1,6 +1,17 @@
 <template>
   <div class="websiteContainer">
     <div class="introContainer">
+      <div class="textContainer rotate">
+        <Transition name="slide-fade">
+          <h2 v-show="turn == 1" :key="1">Qualidade 1</h2>
+        </Transition>
+        <Transition name="slide-fade">
+          <h2 v-show="turn == 2" :key="2">Qualidade 2</h2>
+        </Transition>
+        <Transition name="slide-fade">
+          <h2 v-show="turn == 3" :key="3">Qualidade 3</h2>
+        </Transition>
+      </div>
       <div class="textContainer">
         <p>
           Somos uma empresa formada por arquitetos prontos para tornar seus
@@ -17,8 +28,36 @@
 </template>
 
 <script>
+import { ref } from "vue";
 export default {
   name: "HomeView",
+  data() {
+    return {
+      qualidades: ["Qualidade 1", "Qualidade 2", "Qualidade 3"],
+    };
+  },
+  setup() {
+    const turn = ref(1);
+    const timeOutDuration = ref(5000);
+
+    const nextQuality = () => {
+      if (turn.value === 3) {
+        turn.value = 1;
+        return;
+      }
+      turn.value += 1;
+    };
+
+    const autoPlay = () => {
+      setInterval(() => {
+        nextQuality();
+      }, timeOutDuration.value);
+    };
+
+    autoPlay();
+
+    return { turn, timeOutDuration, nextQuality, autoPlay };
+  },
 };
 </script>
 
@@ -47,6 +86,10 @@ export default {
 }
 
 .introContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: space-evenly;
   background-color: rgba(0, 0, 0, 0.8);
 
   margin-top: 60vh;
@@ -59,9 +102,14 @@ export default {
   flex-flow: column nowrap;
   align-items: flex-start;
   text-align: justify;
-
-  margin-left: 50vw;
   width: 40vw;
+}
+
+.rotate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 p {
@@ -75,5 +123,33 @@ h3 {
   font-size: 2.2rem;
   margin: 0 1rem;
   cursor: default;
+}
+
+h2 {
+  position: absolute;
+  align-self: center;
+  font-family: OpenSansItalic;
+  font-size: 4rem;
+  font-weight: 100;
+  cursor: default;
+  color: #fca17d;
+}
+
+.slide-fade-enter-active {
+  transition: all 1s ease;
+  transition-delay: 1.1;
+}
+
+.slide-fade-leave-active {
+  transition: all 1s ease;
+}
+
+.slide-fade-enter-from {
+  transform: translateY(-4rem);
+  opacity: 0;
+}
+.slide-fade-leave-to {
+  transform: translateY(4rem);
+  opacity: 0;
 }
 </style>

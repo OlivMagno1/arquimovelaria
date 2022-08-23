@@ -1,19 +1,25 @@
 <template>
-  <div class="collapsableMenuContainer">
-    <nav>
-      <router-link to="/">Quem somos</router-link>
-      <router-link to="/projetos">Nossos projetos</router-link>
-      <router-link to="/faleconosco">Fale Conosco</router-link>
-      <button @click="callParent">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-    </nav>
-  </div>
+  <nav>
+    <button @click="callParent">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <span />
+    <router-link to="/">Quem somos</router-link>
+    <router-link to="/projetos">Nossos projetos</router-link>
+    <router-link to="/faleconosco">Fale Conosco</router-link>
+    <span />
+    <ButtonBar />
+  </nav>
 </template>
 
 <script>
+import ButtonBar from "./ButtonBar.vue";
+
 export default {
   name: "CollapsableMenu",
+  components: {
+    ButtonBar,
+  },
   setup(props, { emit }) {
     const callParent = () => {
       emit("invertShow");
@@ -29,24 +35,49 @@ nav {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: flex-end;
 
-  position: relative;
+  position: absolute;
   right: 0;
-  top: 50vh;
-  height: 110vh;
+  height: 100vh;
   width: 15vw;
 
   background-color: #000;
+}
+
+button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+
+  border: 0px;
+  cursor: pointer;
+  width: 15vw;
+  height: 14vh;
+  font-size: 1.6rem;
+}
+
+span {
+  margin: 2rem 0;
+  height: 1px;
+  width: 12vw;
+  background-color: #fff;
+}
+
+button i {
+  margin: 0 3rem;
 }
 
 nav a {
   text-decoration: none;
   font-weight: 400;
   color: #fff;
-  margin: 2rem 1rem;
   transition: 0.2s;
 
+  margin: 1.2rem 3rem;
   display: inline-block;
   position: relative;
 }
@@ -70,10 +101,10 @@ nav a:hover:after {
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #fca17d;
 }
 
 nav a.router-link-exact-active:after {
-  background-color: #42b983;
+  background-color: #fca17d;
 }
 </style>

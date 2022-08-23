@@ -1,14 +1,16 @@
 <template>
   <div class="menuContainer">
-    <h1>Arquimovelaria</h1>
+    <router-link to="/">
+      <img src="@/assets/images/logo.png" />
+    </router-link>
     <button @click="changeShow">
       <i class="fa-solid fa-bars"></i>
     </button>
-    <Transition name="slide">
-      <CollapsableMenu @invertShow="changeShow" v-show="show" />
-    </Transition>
-    <div class="outsideMenu" @click="changeShow" v-if="show" />
   </div>
+  <Transition name="slide">
+    <CollapsableMenu @invertShow="changeShow" v-show="show" />
+  </Transition>
+  <div class="outsideMenu" @click="changeShow" v-if="show" />
 </template>
 
 <script>
@@ -41,16 +43,17 @@ export default {
   align-items: center;
 
   width: 100vw;
-  height: 8vh;
+  height: 14vh;
 }
 
-h1 {
+img {
+  height: auto;
+  width: 15rem;
   position: fixed;
-  left: 3rem;
-  color: #fff;
+  left: 1.5rem;
+  top: 1.5rem;
 
   cursor: pointer;
-  font-weight: 100;
 }
 
 button {

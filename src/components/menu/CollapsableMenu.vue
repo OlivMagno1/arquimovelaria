@@ -4,9 +4,9 @@
       <i class="fa-solid fa-xmark"></i>
     </button>
     <span />
-    <router-link to="/">Quem somos</router-link>
-    <router-link to="/projetos">Nossos projetos</router-link>
-    <router-link to="/faleconosco">Fale Conosco</router-link>
+    <a href="#intro">Quem somos</a>
+    <a href="#projects">Nossos Projetos</a>
+    <a href="#intro">Contato</a>
     <span />
     <ButtonBar />
   </nav>
@@ -37,10 +37,11 @@ nav {
   justify-content: flex-start;
   align-items: flex-end;
 
-  position: absolute;
+  position: fixed;
   right: 0;
   height: 100vh;
   width: 15vw;
+  z-index: 100;
 
   background-color: #000;
 }

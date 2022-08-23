@@ -70,7 +70,7 @@ export default {
   top: 1vh;
   left: 12vw;
 
-  width: 30vw;
+  width: 28vw;
   height: 60vh;
   overflow-y: auto;
 }
@@ -99,7 +99,7 @@ export default {
 
 .line {
   height: 3px;
-  width: 42vw;
+  width: 44vw;
   margin-top: 8px;
   margin-left: 1rem;
   background-color: #fca17d;

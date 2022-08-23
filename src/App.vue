@@ -50,14 +50,21 @@ export default {
   font-weight: 700;
 }
 
+@font-face {
+  src: url(@/assets/fonts/OpenSans-LightItalic.ttf);
+
+  font-family: "OpenSansItalic";
+  font-weight: 100;
+}
+
 * {
   margin: 0;
+  overflow: hidden;
 }
 #app {
   font-family: OpenSans, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
 }
 </style>

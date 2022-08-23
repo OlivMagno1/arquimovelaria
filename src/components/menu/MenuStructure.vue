@@ -1,8 +1,5 @@
 <template>
   <div class="menuContainer">
-    <router-link to="/">
-      <img src="@/assets/images/logo.png" />
-    </router-link>
     <button @click="changeShow">
       <i class="fa-solid fa-bars"></i>
     </button>
@@ -38,22 +35,14 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
+
   display: flex;
   justify-content: flex-end;
   align-items: center;
 
   width: 100vw;
   height: 14vh;
-}
-
-img {
-  height: auto;
-  width: 15rem;
-  position: fixed;
-  left: 1.5rem;
-  top: 1.5rem;
-
-  cursor: pointer;
+  z-index: 99;
 }
 
 button {

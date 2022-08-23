@@ -59,7 +59,6 @@ export default {
 
 * {
   margin: 0;
-  overflow: hidden;
 }
 #app {
   font-family: OpenSans, Helvetica, Arial, sans-serif;

@@ -1,8 +1,6 @@
 <template>
   <div class="sectionContainer" id="intro">
-    <router-link to="/">
-      <img class="logo" src="@/assets/images/logo.png" />
-    </router-link>
+    <img class="logo" src="@/assets/images/logo.png" />
     <div class="introContainer">
       <div class="textContainer rotate">
         <Transition name="slide-fade">

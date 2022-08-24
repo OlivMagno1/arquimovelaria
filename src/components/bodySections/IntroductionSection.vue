@@ -63,6 +63,44 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 1000px) {
+  .introContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 25vh;
+    height: 50vh;
+  }
+
+  .textContainer {
+    width: 80vw;
+  }
+
+  h2 {
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .introContainer {
+    display: flex;
+    justify-content: center;
+    align-items: space-evenly;
+    flex-flow: row nowrap;
+    margin-top: 55vh;
+  }
+
+  .textContainer {
+    width: 40vw;
+  }
+
+  h2 {
+    position: absolute;
+    align-self: center;
+  }
+}
+
 .sectionContainer {
   display: flex;
   flex-flow: column nowrap;
@@ -98,13 +136,8 @@ export default {
 }
 
 .introContainer {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: space-evenly;
   background-color: rgba(0, 0, 0, 0.8);
 
-  margin-top: 60vh;
   width: 100vw;
 }
 
@@ -114,7 +147,6 @@ export default {
   flex-flow: column nowrap;
   align-items: flex-start;
   text-align: justify;
-  width: 40vw;
 }
 
 .rotate {
@@ -125,14 +157,14 @@ export default {
 }
 
 p {
-  font-size: 1.4rem;
+  font-size: clamp(0.7rem, 0.30625rem + 1.75vw, 1.4rem);
   margin: 0 1rem;
   cursor: default;
 }
 
 h3 {
   font-weight: 700;
-  font-size: 2.2rem;
+  font-size: clamp(0.9rem, -0.16875rem + 3.25vw, 2.2rem);
   margin: 0 1rem;
   cursor: default;
 }
@@ -141,7 +173,7 @@ h2 {
   position: absolute;
   align-self: center;
   font-family: OpenSansItalic;
-  font-size: 4rem;
+  font-size: clamp(2rem, 0.875rem + 5vw, 4rem);
   font-weight: 100;
   cursor: default;
   color: #fca17d;

@@ -2,10 +2,12 @@
   <div class="sectionContainer" id="projects">
     <h2 class="portfolioTitle">Nossos projetos <span class="line" /></h2>
     <div class="zoomContainer">
-      <img
-        class="zoomedPhoto"
-        :src="require(`@/assets/images/projects/${actual}.jpg`)"
-      />
+      <Transition name="fade" appear>
+        <img
+          class="zoomedPhoto"
+          :src="require(`@/assets/images/projects/${actual}.jpg`)"
+        />
+      </Transition>
     </div>
     <div class="portfolioContainer">
       <div
@@ -75,6 +77,16 @@ export default {
   overflow-y: auto;
 }
 
+::-webkit-scrollbar {
+  background-color: #fca17d;
+  border-radius: 0 7px 7px 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #631e03;
+  border-radius: 0 7px 7px 0;
+}
+
 .zoomedPhoto {
   max-width: inherit;
   max-height: inherit;
@@ -102,7 +114,7 @@ export default {
   width: 44vw;
   margin-top: 8px;
   margin-left: 1rem;
-  background-color: #fca17d;
+  background-color: #631e03;
 }
 
 .portfolioPhoto {
@@ -113,6 +125,12 @@ export default {
   width: inherit;
   margin: 0 0.5vw 0.5vw 0.5vw;
 
+  filter: opacity(0.5);
+  transition: 0.2s;
   object-fit: cover;
+}
+
+.portfolioPhoto:hover {
+  filter: opacity(1);
 }
 </style>

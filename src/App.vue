@@ -67,4 +67,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
+
+::-webkit-scrollbar {
+  background-color: #fca17d;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #631e03;
+}
 </style>

@@ -2,14 +2,14 @@
   <div class="sectionContainer">
     <div class="logoContainer">
       <img class="logo" src="@/assets/images/logo.png" />
-      <p>
+      <p class="description">
         ArquiMovelaria é uma empresa de Arquitetura e Movelaria, realizamos
         design e móveis sob encomenda.
       </p>
-      <p>
+      <p class="description">
         Localizados em X, atendemos à todo o Vale do Paraíba e Capital Paulista
       </p>
-      <p>Todos os direitos reservados.</p>
+      <p class="description">Todos os direitos reservados.</p>
     </div>
     <div class="columnContainer">
       <h2>Navegação</h2>
@@ -22,29 +22,10 @@
     <div class="columnContainer">
       <h2>Contato</h2>
       <div class="linkContainer">
-        <button>
-          <i class="fa-brands fa-facebook"></i>
-          <div class="descriptionContainer">
-            <a href="https://www.facebook.com" target="_blank">
-              /ArquiMovelaria
-            </a>
-          </div>
-        </button>
-        <button>
-          <i class="fa-brands fa-instagram"></i>
-          <div class="descriptionContainer">
-            <a href="https://www.instagram.com" target="_blank">
-              /ArquiMovelaria
-            </a>
-          </div>
-        </button>
-        <button>
-          <i class="fa-brands fa-whatsapp"></i>
-          <div class="descriptionContainer">
-            <a href="tel:+5512982250062">(12) 98225-0062</a>
-            <a href="tel:+5512981132496">(12) 98113-2496</a>
-          </div>
-        </button>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        <p>(12) 98225-0062</p>
+        <p>(12) 98113-2496</p>
       </div>
     </div>
   </div>
@@ -61,6 +42,7 @@ export default {
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-start;
+  justify-content: center;
   margin-top: 20vh;
   width: 100vw;
   height: 28vh;
@@ -72,7 +54,7 @@ export default {
   flex-flow: column nowrap;
   align-items: flex-start;
   text-align: justify;
-  margin: 1.5rem;
+  margin: 1.5rem 3rem;
   width: 25vw;
 }
 
@@ -83,14 +65,22 @@ export default {
 h2 {
   color: #fca17d;
   margin-bottom: 0.5rem;
+  font-weight: 100;
 }
 
 p {
-  font-size: 0.85rem;
   color: #fff;
+  cursor: default;
+}
+
+.description {
+  font-size: 0.85rem;
 }
 
 .columnContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
   margin: 2rem 1.5rem;
   width: 10vw;
   height: 12vw;
@@ -110,7 +100,7 @@ p {
 }
 
 .linkContainer i {
-  font-size: 2rem;
+  font-size: 1rem;
   margin-right: 0.5rem;
   color: #fff;
 }

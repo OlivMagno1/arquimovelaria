@@ -56,7 +56,7 @@ button {
 }
 
 button:hover {
-  background-color: #fff;
+  background-color: #fca17d;
 }
 
 i {
@@ -71,6 +71,6 @@ a {
 
 button:hover i,
 button:hover a {
-  color: #000;
+  color: #631e03;
 }
 </style>

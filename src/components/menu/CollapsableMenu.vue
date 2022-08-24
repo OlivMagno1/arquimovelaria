@@ -3,11 +3,11 @@
     <button @click="callParent">
       <i class="fa-solid fa-xmark"></i>
     </button>
-    <span />
+    <span class="separator" />
     <a href="#intro" v-smooth-scroll>Quem somos</a>
     <a href="#projects" v-smooth-scroll>Nossos Projetos</a>
     <a href="#intro" v-smooth-scroll>Contato</a>
-    <span />
+    <span class="separator" />
     <ButtonBar />
   </nav>
 </template>
@@ -61,11 +61,11 @@ button {
   font-size: 1.6rem;
 }
 
-span {
+.separator {
   margin: 2rem 0;
   height: 1px;
   width: 12vw;
-  background-color: #fff;
+  background-color: #631e03;
 }
 
 button i {
@@ -83,6 +83,10 @@ nav a {
   position: relative;
 }
 
+nav a:hover {
+  color: #fca17d;
+}
+
 nav a:after {
   content: "";
   position: absolute;
@@ -91,7 +95,7 @@ nav a:after {
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #fff;
+  background-color: #fca17d;
   transform-origin: bottom right;
   transition: transform 0.15s ease-out;
 }
@@ -99,10 +103,6 @@ nav a:after {
 nav a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
-}
-
-nav a.router-link-exact-active {
-  color: #fca17d;
 }
 
 nav a.router-link-exact-active:after {

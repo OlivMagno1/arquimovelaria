@@ -9,7 +9,7 @@
     <button>
       <i class="fa-brands fa-instagram"></i>
       <div class="descriptionContainer">
-        <a href="https://www.facebook.com" target="_blank">/ArquiMovelaria</a>
+        <a href="https://www.instagram.com" target="_blank">/ArquiMovelaria</a>
       </div>
     </button>
     <button>

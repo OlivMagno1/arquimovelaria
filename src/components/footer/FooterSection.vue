@@ -1,5 +1,5 @@
 <template>
-  <div class="sectionContainer">
+  <div class="sectionContainer" id="footer">
     <div class="logoContainer">
       <img class="logo" src="@/assets/images/logo.png" />
       <p class="description">
@@ -38,24 +38,86 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 1000px) {
+  .sectionContainer {
+    flex-flow: column nowrap;
+    height: 34vh;
+  }
+
+  .logoContainer {
+    flex-flow: row wrap;
+    width: 80vw;
+  }
+
+  .description {
+    width: 78vw;
+  }
+
+  .columnContainer {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80vw;
+    margin: 0.5rem 1.5rem;
+  }
+
+  .columnContainer h2 {
+    align-self: left;
+    width: 18vw;
+  }
+
+  .linkContainer {
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60vw;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .sectionContainer {
+    flex-flow: row nowrap;
+    height: 28vh;
+  }
+
+  .logoContainer {
+    flex-flow: column nowrap;
+    width: 25vw;
+  }
+
+  .columnContainer {
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    width: 10vw;
+    margin: 2rem 1.5rem;
+    height: 12vw;
+  }
+
+  .linkContainer {
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  .linkContainer a {
+    margin-bottom: 0.5rem;
+  }
+}
+
 .sectionContainer {
   display: flex;
-  flex-flow: row nowrap;
   align-items: flex-start;
   justify-content: center;
   margin-top: 20vh;
   width: 100vw;
-  height: 28vh;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
 .logoContainer {
   display: flex;
-  flex-flow: column nowrap;
   align-items: flex-start;
   text-align: justify;
   margin: 1.5rem 3rem;
-  width: 25vw;
 }
 
 .logoContainer img {
@@ -79,24 +141,15 @@ p {
 
 .columnContainer {
   display: flex;
-  flex-flow: column nowrap;
-  align-items: flex-start;
-  margin: 2rem 1.5rem;
-  width: 10vw;
-  height: 12vw;
 }
 
 .linkContainer {
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
 }
 
 .linkContainer a {
   text-decoration: none;
   color: #fff;
-  margin-bottom: 0.5rem;
 }
 
 .linkContainer i {

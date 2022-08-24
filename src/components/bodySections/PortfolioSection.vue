@@ -47,6 +47,104 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 800px) {
+  .zoomContainer {
+    align-self: center;
+    height: 40vh;
+  }
+
+  .portfolioContainer {
+    flex-flow: row nowrap;
+    overflow-x: auto;
+    height: 16vh;
+    width: 73vw;
+    top: 42vh;
+  }
+
+  .portfolioPhoto {
+    max-width: 6rem;
+    margin: 0 0.3rem 0.3rem 0.3rem;
+  }
+
+  .line {
+    width: 30vw;
+  }
+
+  ::-webkit-scrollbar {
+    border-radius: 0 0 7px 7px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 0 0 7px 7px;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+  .zoomContainer {
+    left: clamp(1.6rem, -19.22rem + 41.6vw, 6.8rem);
+    height: 50vh;
+  }
+
+  .portfolioContainer {
+    flex-flow: row wrap;
+    overflow-y: auto;
+    height: 50vh;
+    width: 21.6rem;
+    left: 12.6rem;
+    top: 1vh;
+  }
+
+  .portfolioPhoto {
+    max-width: 9.6rem;
+    margin: 0 0.3rem 0.3rem 0.3rem;
+  }
+
+  .line {
+    width: 30vw;
+  }
+
+  ::-webkit-scrollbar {
+    border-radius: 0 7px 7px 0;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 0 7px 7px 0;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .zoomContainer {
+    left: clamp(1.6rem, -26.89rem + 45.5vw, 26.4rem);
+    height: 55vh;
+  }
+
+  .portfolioContainer {
+    flex-flow: row wrap;
+    overflow-y: auto;
+    height: 55vh;
+    width: 33.6rem;
+    left: clamp(12.6rem, -8.24rem + 6.9vw, 16.6rem);
+    top: 1vh;
+  }
+
+  .portfolioPhoto {
+    max-width: 9.6rem;
+    margin: 0 0.6rem 0.6rem 0.6rem;
+  }
+
+  .line {
+    width: 30vw;
+  }
+
+  ::-webkit-scrollbar {
+    border-radius: 0 7px 7px 0;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 0 7px 7px 0;
+  }
+}
+
 .sectionContainer {
   display: flex;
   flex-flow: column nowrap;
@@ -61,30 +159,19 @@ export default {
 .zoomContainer {
   position: absolute;
   top: 10vh;
-  left: 20vw;
-  height: 60vh;
 }
 
 .portfolioContainer {
   display: flex;
-  flex-flow: row wrap;
   position: relative;
-  top: 1vh;
-  left: 12vw;
-
-  width: 28vw;
-  height: 60vh;
-  overflow-y: auto;
 }
 
 ::-webkit-scrollbar {
   background-color: #fca17d;
-  border-radius: 0 7px 7px 0;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #631e03;
-  border-radius: 0 7px 7px 0;
 }
 
 .zoomedPhoto {
@@ -100,18 +187,18 @@ export default {
   align-items: center;
 
   position: relative;
-  width: 65vw;
+  margin-left: clamp(1rem, -7.875rem + 35vw, 15rem);
+  margin-right: clamp(1rem, -7.875rem + 35vw, 15rem);
   height: 8vh;
 
   margin-top: 1vh;
   color: #fca17d;
   font-weight: 100;
-  font-size: 2.6rem;
+  font-size: clamp(1.2rem, -0.4125rem + 3.5vw, 2.6rem);
 }
 
 .line {
   height: 3px;
-  width: 44vw;
   margin-top: 8px;
   margin-left: 1rem;
   background-color: #631e03;
@@ -119,11 +206,9 @@ export default {
 
 .portfolioPhoto {
   cursor: pointer;
-  max-width: 8vw;
   max-height: inherit;
   height: inherit;
   width: inherit;
-  margin: 0 0.5vw 0.5vw 0.5vw;
 
   filter: opacity(0.5);
   transition: 0.2s;

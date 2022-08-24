@@ -49,7 +49,7 @@ button {
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
-  width: 8vw;
+  width: 9.6rem;
   background-color: rgba(0, 0, 0, 0);
 
   transition: 0.2s;

@@ -40,7 +40,7 @@ nav {
   position: fixed;
   right: 0;
   height: 100vh;
-  width: 15vw;
+  width: 18rem;
   z-index: 100;
 
   background-color: #000;
@@ -56,7 +56,7 @@ button {
 
   border: 0px;
   cursor: pointer;
-  width: 15vw;
+  width: 18rem;
   height: 14vh;
   font-size: 1.6rem;
 }
@@ -64,7 +64,7 @@ button {
 .separator {
   margin: 2rem 0;
   height: 1px;
-  width: 12vw;
+  width: 14.4rem;
   background-color: #631e03;
 }
 
@@ -77,6 +77,8 @@ nav a {
   font-weight: 400;
   color: #fff;
   transition: 0.2s;
+
+  font-size: 1rem;
 
   margin: 1.2rem 3rem;
   display: inline-block;

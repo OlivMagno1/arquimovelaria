@@ -66,7 +66,7 @@ button {
   left: 0;
   z-index: 999;
 
-  width: 85vw;
+  width: calc(100vw - 18rem);
   height: 100vh;
 }
 

@@ -66,10 +66,6 @@ export default {
     margin: 0 0.3rem 0.3rem 0.3rem;
   }
 
-  .line {
-    width: 30vw;
-  }
-
   ::-webkit-scrollbar {
     border-radius: 0 0 7px 7px;
   }
@@ -99,10 +95,6 @@ export default {
     margin: 0 0.3rem 0.3rem 0.3rem;
   }
 
-  .line {
-    width: 30vw;
-  }
-
   ::-webkit-scrollbar {
     border-radius: 0 7px 7px 0;
   }
@@ -130,10 +122,6 @@ export default {
   .portfolioPhoto {
     max-width: 9.6rem;
     margin: 0 0.6rem 0.6rem 0.6rem;
-  }
-
-  .line {
-    width: 30vw;
   }
 
   ::-webkit-scrollbar {
@@ -199,6 +187,7 @@ export default {
 
 .line {
   height: 3px;
+  width: 30vw;
   margin-top: 8px;
   margin-left: 1rem;
   background-color: #631e03;

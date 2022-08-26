@@ -6,7 +6,7 @@
     <span class="separator" />
     <a href="#intro" v-smooth-scroll>Quem somos</a>
     <a href="#projects" v-smooth-scroll="{ offset: -100 }">Nossos Projetos</a>
-    <a href="#intro" v-smooth-scroll>Contato</a>
+    <a href="#contact" v-smooth-scroll="{ offset: -200 }">Contato</a>
     <span class="separator" />
     <ButtonBar />
   </nav>

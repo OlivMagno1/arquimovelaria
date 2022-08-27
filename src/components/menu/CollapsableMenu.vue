@@ -4,8 +4,9 @@
       <i class="fa-solid fa-xmark"></i>
     </button>
     <span class="separator" />
+    <a href="#cover" v-smooth-scroll>Início</a>
     <a href="#intro" v-smooth-scroll>Quem somos</a>
-    <a href="#projects" v-smooth-scroll="{ offset: -100 }">Nossos Projetos</a>
+    <a href="#projects" v-smooth-scroll>Nossos Projetos</a>
     <a href="#contact" v-smooth-scroll="{ offset: -200 }">Contato</a>
     <span class="separator" />
     <ButtonBar />

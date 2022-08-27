@@ -4,27 +4,32 @@
     <div class="splitSection">
       <div class="textContainer">
         <p class="textLeft">
-          Entre em contato conosco pelo whatsapp ou instagram para fazer o seu
-          orçamento
-        </p>
-        <p class="textLeft">Nossa equipe está pronta para te atender</p>
-        <p class="textLeft">
-          Projetos exclusivos para cada cliente, com prazo de entrega de até 90
-          dias
+          Entre em contato conosco pelo Whatsapp ou Instagram para fazer o seu
+          orçamento.
         </p>
         <p class="textLeft">
-          Pagamento em até 10x no cartão, ou à vista com 10% de desconto
+          Nossa equipe está sempre pronta para te atender com projetos
+          exclusivos e com prazo de entrega de até 90 dias
+        </p>
+        <p class="textLeft">
+          Aceitamos pagamento em até 10x no cartão, ou à vista com 10% de
+          desconto
         </p>
       </div>
       <div class="mapContainer">
-        <div class="mapLimiter">
+        <a
+          href="https://goo.gl/maps/1QyB3xnexRTM4e8X6"
+          target="_blank"
+          class="mapLimiter"
+        >
           <h4>Abrir mapa</h4>
           <img src="@/assets/images/map.png" />
-        </div>
+        </a>
         <p class="textRight">
-          Estamos localizados na Rua Comendador Custodio Vieira, 204
+          Estamos localizados na Rua Comendador Custodio Vieira, 204, no centro
+          de Lorena, SP. Também atendemos no Vale do Paraíba e em toda a capital
+          Paulista.
         </p>
-        <p class="textRight">Centro de Lorena, SP.</p>
       </div>
     </div>
   </div>
@@ -33,6 +38,26 @@
 <script></script>
 
 <style scoped>
+@media screen and (max-width: 800px) {
+  .splitSection {
+    flex-flow: column nowrap;
+  }
+
+  .textContainer {
+    width: 40vw;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .splitSection {
+    flex-flow: row nowrap;
+  }
+
+  .textContainer {
+    width: 40vw;
+  }
+}
+
 .sectionContainer {
   display: flex;
   flex-flow: column nowrap;
@@ -84,7 +109,6 @@
 
 .splitSection {
   display: flex;
-  flex-flow: row nowrap;
   justify-content: space-evenly;
   width: 100vw;
   margin-bottom: 8vh;
@@ -95,11 +119,10 @@
   flex-flow: column nowrap;
   align-items: flex-start;
   text-align: justify;
-  width: 40vw;
 }
 
 .mapContainer {
-  width: 40vw;
+  width: 25vw;
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
@@ -121,12 +144,12 @@
 h4 {
   position: absolute;
   opacity: 0;
-  color: rgba(0, 0, 0, 0.4);
+  color: #631e03;
   font-size: 2rem;
 }
 
 .mapLimiter:hover h4 {
-  opacity: 1;
+  opacity: 0.6;
 }
 
 img {

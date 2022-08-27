@@ -1,6 +1,6 @@
 <template>
   <div class="sectionContainer" id="projects">
-    <h2 class="portfolioTitle">Nossos projetos <span class="line" /></h2>
+    <h2 class="portfolioTitle">Nossos projetos</h2>
     <div class="zoomContainer">
       <Transition name="fade" appear>
         <img
@@ -106,22 +106,23 @@ export default {
 
 @media screen and (min-width: 1001px) {
   .zoomContainer {
-    left: clamp(1.6rem, -26.89rem + 45.5vw, 26.4rem);
-    height: 55vh;
+    /*left: clamp(1.6rem, -26.89rem + 45.5vw, 26.4rem); */
+    left: 20rem;
+    height: 80vh;
   }
 
   .portfolioContainer {
     flex-flow: row wrap;
     overflow-y: auto;
-    height: 55vh;
-    width: 33.6rem;
-    left: clamp(12.6rem, -8.24rem + 6.9vw, 16.6rem);
-    top: 1vh;
+    height: 80vh;
+    width: 41.8rem;
+    left: 60rem;
+    top: 2rem;
   }
 
   .portfolioPhoto {
     max-width: 9.6rem;
-    margin: 0 0.6rem 0.6rem 0.6rem;
+    margin: 0 0.3rem 0.3rem 0.3rem;
   }
 
   ::-webkit-scrollbar {
@@ -136,17 +137,16 @@ export default {
 .sectionContainer {
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.8);
-  height: 80vh;
+  background-color: #171412;
+  height: 100vh;
   width: 100vw;
-  margin: 10vh 0;
 }
 
 .zoomContainer {
   position: absolute;
-  top: 10vh;
+  top: 9.7rem;
 }
 
 .portfolioContainer {
@@ -155,11 +155,11 @@ export default {
 }
 
 ::-webkit-scrollbar {
-  background-color: #fca17d;
+  background-color: #0a0908;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #631e03;
+  background-color: #5e503f;
 }
 
 .zoomedPhoto {
@@ -170,19 +170,20 @@ export default {
   object-fit: cover;
 }
 
-.portfolioTitle {
+h2 {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 
   position: relative;
-  margin-left: clamp(1rem, -7.875rem + 35vw, 15rem);
-  margin-right: clamp(1rem, -7.875rem + 35vw, 15rem);
+  margin-left: 1rem;
   height: 8vh;
 
-  margin-top: 1vh;
-  color: #fca17d;
+  margin-top: 3rem;
+  font-family: OpenSansItalic;
+  color: #493e31;
   font-weight: 100;
-  font-size: clamp(1.2rem, -0.4125rem + 3.5vw, 2.6rem);
+  /*font-size: clamp(1.2rem, -0.4125rem + 3.5vw, 2.6rem); */
+  font-size: 4rem;
 }
 
 .line {

@@ -69,10 +69,11 @@ export default {
 }
 
 ::-webkit-scrollbar {
-  background-color: #fca17d;
+  background-color: #0a0908;
+  width: 0.75rem;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #631e03;
+  background-color: #5e503f;
 }
 </style>

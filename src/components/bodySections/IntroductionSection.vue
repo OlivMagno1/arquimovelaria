@@ -1,11 +1,11 @@
 <template>
   <div class="sectionContainer" id="intro">
-    <h2>Quem somos nós</h2>
+    <h2>Quem somos</h2>
     <div class="textContainer">
       <p>
-        Somos uma empresa formada por arquitetos prontos para tornar seus sonhos
-        realidade, trazendo através dos móveis planejados o conforto e a
-        funcionalidade que o seu lar precisa.
+        A <span>ArquiMovelaria</span> é uma empresa formada por arquitetos
+        prontos para tornar seus sonhos realidade, trazendo através dos móveis
+        planejados o conforto e a funcionalidade que o seu lar precisa.
       </p>
       <p>Sempre buscando a beleza, qualidade e satisfação.</p>
       <p>Atendemos todo o vale do paraíba e capital.</p>
@@ -57,5 +57,8 @@ p {
   font-weight: 100;
   font-family: OpenSansItalic;
   width: 40vw;
+}
+span {
+  color: #5e503f;
 }
 </style>

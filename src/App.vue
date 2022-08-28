@@ -16,6 +16,27 @@ export default {
 
 <style>
 @font-face {
+  src: url(@/assets/fonts/Allegro.otf);
+
+  font-family: "Allegro";
+  font-weight: 400;
+}
+
+@font-face {
+  src: url(@/assets/fonts/Athene.otf);
+
+  font-family: "Athene";
+  font-weight: 400;
+}
+
+@font-face {
+  src: url(@/assets/fonts/Ginerin.otf);
+
+  font-family: "Ginerin";
+  font-weight: 400;
+}
+
+@font-face {
   src: url(@/assets/fonts/OpenSans-Light.ttf);
 
   font-family: "OpenSans";
@@ -30,13 +51,6 @@ export default {
 }
 
 @font-face {
-  src: url(@/assets/fonts/OpenSans-Semibold.ttf);
-
-  font-family: "OpenSans";
-  font-weight: 500;
-}
-
-@font-face {
   src: url(@/assets/fonts/OpenSans-Bold.ttf);
 
   font-family: "OpenSans";
@@ -44,17 +58,24 @@ export default {
 }
 
 @font-face {
-  src: url(@/assets/fonts/OpenSans-ExtraBold.ttf);
+  src: url(@/assets/fonts/Quentin.otf);
 
-  font-family: "OpenSans";
-  font-weight: 700;
+  font-family: "Quentin";
+  font-weight: 400;
 }
 
 @font-face {
-  src: url(@/assets/fonts/OpenSans-LightItalic.ttf);
+  src: url(@/assets/fonts/Mojito.otf);
 
-  font-family: "OpenSansItalic";
-  font-weight: 100;
+  font-family: "Mojito";
+  font-weight: 400;
+}
+
+@font-face {
+  src: url(@/assets/fonts/Storylona.otf);
+
+  font-family: "Storylona";
+  font-weight: 400;
 }
 
 * {
@@ -69,11 +90,12 @@ export default {
 }
 
 ::-webkit-scrollbar {
-  background-color: #0a0908;
+  background-color: #cfb8a0;
   width: 0.75rem;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #5e503f;
+  background-color: #2b2d42;
+  border-radius: 7px;
 }
 </style>

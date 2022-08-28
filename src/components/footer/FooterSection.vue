@@ -7,7 +7,8 @@
         design e móveis sob encomenda.
       </p>
       <p class="description">
-        Localizados em X, atendemos à todo o Vale do Paraíba e Capital Paulista
+        Localizados no centro de Lorena, atendemos à todo o Vale do Paraíba e
+        Capital Paulista
       </p>
       <p class="description">Todos os direitos reservados.</p>
     </div>
@@ -108,9 +109,8 @@ export default {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  margin-top: 20vh;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #2b2d42;
 }
 
 .logoContainer {
@@ -125,13 +125,13 @@ export default {
 }
 
 h2 {
-  color: #fca17d;
+  color: #f08c1a;
   margin-bottom: 0.5rem;
   font-weight: 100;
 }
 
 p {
-  color: #fff;
+  color: #eae0d5;
   cursor: default;
 }
 
@@ -149,13 +149,7 @@ p {
 
 .linkContainer a {
   text-decoration: none;
-  color: #fff;
-}
-
-.linkContainer i {
-  font-size: 1rem;
-  margin-right: 0.5rem;
-  color: #fff;
+  color: #eae0d5;
 }
 
 .logo {
@@ -181,7 +175,7 @@ button {
 }
 
 button i {
-  color: #fff;
+  color: #eae0d5;
   font-size: 3rem;
 }
 </style>

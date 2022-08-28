@@ -7,7 +7,7 @@
     <a href="#cover" v-smooth-scroll>Início</a>
     <a href="#intro" v-smooth-scroll>Quem somos</a>
     <a href="#projects" v-smooth-scroll>Nossos Projetos</a>
-    <a href="#contact" v-smooth-scroll="{ offset: -200 }">Contato</a>
+    <a href="#contact" v-smooth-scroll>Contato</a>
     <span class="separator" />
     <ButtonBar />
   </nav>
@@ -44,7 +44,7 @@ nav {
   width: 18rem;
   z-index: 100;
 
-  background-color: #000;
+  background-color: #2b2d42;
 }
 
 button {
@@ -52,8 +52,8 @@ button {
   justify-content: flex-end;
   align-items: center;
 
-  background-color: rgba(0, 0, 0, 0);
-  color: #fff;
+  background-color: #2b2d42;
+  color: #eae0d5;
 
   border: 0px;
   cursor: pointer;
@@ -66,7 +66,7 @@ button {
   margin: 2rem 0;
   height: 1px;
   width: 14.4rem;
-  background-color: #631e03;
+  background-color: #f08c1a;
 }
 
 button i {
@@ -76,7 +76,7 @@ button i {
 nav a {
   text-decoration: none;
   font-weight: 400;
-  color: #fff;
+  color: #eae0d5;
   transition: 0.2s;
 
   font-size: 1rem;
@@ -87,7 +87,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #fca17d;
+  color: #f08c1a;
 }
 
 nav a:after {
@@ -98,7 +98,7 @@ nav a:after {
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #fca17d;
+  background-color: #f08c1a;
   transform-origin: bottom right;
   transition: transform 0.15s ease-out;
 }
@@ -109,6 +109,6 @@ nav a:hover:after {
 }
 
 nav a.router-link-exact-active:after {
-  background-color: #fca17d;
+  background-color: #f08c1a;
 }
 </style>

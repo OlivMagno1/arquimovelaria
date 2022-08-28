@@ -1,6 +1,6 @@
 <template>
   <div class="sectionContainer" id="projects">
-    <h2 class="portfolioTitle">Nossos projetos</h2>
+    <h2>Nossos projetos</h2>
     <div class="zoomContainer">
       <Transition name="fade" appear>
         <img
@@ -47,119 +47,107 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .zoomContainer {
     align-self: center;
-    height: 40vh;
+    height: 22.5rem;
   }
 
   .portfolioContainer {
     flex-flow: row nowrap;
     overflow-x: auto;
-    height: 16vh;
-    width: 73vw;
-    top: 42vh;
+    height: 9.3rem;
+    width: clamp(18rem, 13.9rem + 18.25vw, 25.3rem);
+
+    left: clamp(1.6rem, -2.88rem + 19.9vw, 21rem);
+    top: clamp(32.5rem, 27.43rem + 22.5vw, 41.5rem);
   }
 
   .portfolioPhoto {
     max-width: 6rem;
-    margin: 0 0.3rem 0.3rem 0.3rem;
-  }
-
-  ::-webkit-scrollbar {
-    border-radius: 0 0 7px 7px;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    border-radius: 0 0 7px 7px;
   }
 }
 
-@media screen and (min-width: 801px) and (max-width: 1000px) {
-  .zoomContainer {
-    left: clamp(1.6rem, -19.22rem + 41.6vw, 6.8rem);
-    height: 50vh;
-  }
-
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
   .portfolioContainer {
     flex-flow: row wrap;
     overflow-y: auto;
-    height: 50vh;
-    width: 21.6rem;
-    left: 12.6rem;
-    top: 1vh;
+    width: 20rem;
+    height: clamp(22.5rem, 17.3rem + 23vw, 45rem);
+
+    top: 9rem;
+    left: clamp(36rem, 9.86rem + 42vw, 60rem);
   }
 
   .portfolioPhoto {
-    max-width: 9.6rem;
-    margin: 0 0.3rem 0.3rem 0.3rem;
-  }
-
-  ::-webkit-scrollbar {
-    border-radius: 0 7px 7px 0;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    border-radius: 0 7px 7px 0;
+    max-width: 9rem;
   }
 }
 
-@media screen and (min-width: 1001px) {
-  .zoomContainer {
-    /*left: clamp(1.6rem, -26.89rem + 45.5vw, 26.4rem); */
-    left: 20rem;
-    height: 80vh;
-  }
-
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
   .portfolioContainer {
     flex-flow: row wrap;
     overflow-y: auto;
-    height: 80vh;
-    width: 41.8rem;
-    left: 60rem;
-    top: 2rem;
+    width: 29.8rem;
+    height: clamp(22.5rem, 17.3rem + 23vw, 45rem);
+
+    top: 9rem;
+    left: clamp(36rem, 9.86rem + 42vw, 60rem);
   }
 
   .portfolioPhoto {
-    max-width: 9.6rem;
-    margin: 0 0.3rem 0.3rem 0.3rem;
+    max-width: 9rem;
+  }
+}
+
+@media screen and (min-width: 1401px) {
+  .portfolioContainer {
+    flex-flow: row wrap;
+    overflow-y: auto;
+    width: 39.2rem;
+    height: clamp(22.5rem, 17.3rem + 23vw, 45rem);
+
+    top: 9rem;
+    left: clamp(36rem, 9.86rem + 42vw, 60rem);
   }
 
-  ::-webkit-scrollbar {
-    border-radius: 0 7px 7px 0;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    border-radius: 0 7px 7px 0;
+  .portfolioPhoto {
+    max-width: 9rem;
   }
 }
 
 .sectionContainer {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: flex-start;
   position: relative;
-  background-color: #171412;
+  background-color: #eae0d5;
   height: 100vh;
   width: 100vw;
 }
 
+h2 {
+  position: absolute;
+  left: clamp(1.6rem, -4.95rem + 29vw, 30rem);
+  top: 3rem;
+
+  font-family: Storylona;
+  font-size: clamp(1rem, 0.54rem + 2vw, 3rem);
+  font-weight: 100;
+  letter-spacing: 0.5rem;
+  color: #f08c1a;
+
+  cursor: default;
+}
+
 .zoomContainer {
   position: absolute;
-  top: 9.7rem;
+  left: clamp(1.6rem, -2.88rem + 19.9vw, 21rem);
+  top: 9rem;
+
+  height: clamp(22.5rem, 17.3rem + 23vw, 45rem);
 }
 
 .portfolioContainer {
   display: flex;
   position: relative;
-}
-
-::-webkit-scrollbar {
-  background-color: #0a0908;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #5e503f;
 }
 
 .zoomedPhoto {
@@ -170,36 +158,13 @@ export default {
   object-fit: cover;
 }
 
-h2 {
-  display: flex;
-  align-items: flex-start;
-
-  position: relative;
-  margin-left: 1rem;
-  height: 8vh;
-
-  margin-top: 3rem;
-  font-family: OpenSansItalic;
-  color: #493e31;
-  font-weight: 100;
-  /*font-size: clamp(1.2rem, -0.4125rem + 3.5vw, 2.6rem); */
-  font-size: 4rem;
-}
-
-.line {
-  height: 3px;
-  width: 30vw;
-  margin-top: 8px;
-  margin-left: 1rem;
-  background-color: #631e03;
-}
-
 .portfolioPhoto {
   cursor: pointer;
   max-height: inherit;
   height: inherit;
   width: inherit;
 
+  margin: 0 0.3rem 0.3rem 0.3rem;
   filter: opacity(0.5);
   transition: 0.2s;
   object-fit: cover;
@@ -207,5 +172,14 @@ h2 {
 
 .portfolioPhoto:hover {
   filter: opacity(1);
+}
+
+::-webkit-scrollbar {
+  background-color: #cfb8a0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2b2d42;
+  border-radius: 7px;
 }
 </style>

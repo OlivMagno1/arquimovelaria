@@ -51,26 +51,27 @@ button {
   justify-content: space-between;
   width: 9.6rem;
   background-color: rgba(0, 0, 0, 0);
+  border: 0;
 
   transition: 0.2s;
 }
 
 button:hover {
-  background-color: #fca17d;
+  background-color: #f08c1a;
 }
 
 i {
-  color: #fff;
+  color: #eae0d5;
   font-size: 2rem;
 }
 
 a {
-  color: #fff;
+  color: #eae0d5;
   text-decoration: none;
 }
 
 button:hover i,
 button:hover a {
-  color: #631e03;
+  color: #625834;
 }
 </style>

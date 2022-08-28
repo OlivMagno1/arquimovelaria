@@ -1,14 +1,16 @@
 <template>
   <div class="sectionContainer" id="intro">
-    <h2>Quem somos</h2>
+    <h2>QUEM SOMOS</h2>
     <div class="textContainer">
       <p>
         A <span>ArquiMovelaria</span> é uma empresa formada por arquitetos
         prontos para tornar seus sonhos realidade, trazendo através dos móveis
         planejados o conforto e a funcionalidade que o seu lar precisa.
       </p>
-      <p>Sempre buscando a beleza, qualidade e satisfação.</p>
-      <p>Atendemos todo o vale do paraíba e capital.</p>
+      <p>
+        Sempre buscando a beleza, qualidade e satisfação, nossos projetos são
+        exclusivos para você.
+      </p>
     </div>
   </div>
 </template>
@@ -21,44 +23,44 @@ export default {
 
 <style scoped>
 .sectionContainer {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: flex-start;
+  position: relative;
   height: 100vh;
-  background-color: #0a0908;
+  background-color: #ddcdbb;
 }
 
 h2 {
-  display: flex;
-  align-items: flex-start;
+  position: absolute;
+  left: 30rem;
+  top: 18rem;
 
-  position: relative;
-  margin-left: 1rem;
-  height: 8vh;
-
-  margin-top: 3rem;
-  font-family: OpenSansItalic;
-  color: #5e503f;
+  font-family: Storylona;
+  font-size: 3rem;
   font-weight: 100;
-  /*font-size: clamp(1.2rem, -0.4125rem + 3.5vw, 2.6rem); */
-  font-size: 4rem;
+  letter-spacing: 0.5rem;
+  color: #f08c1a;
+
+  cursor: default;
 }
 
 .textContainer {
-  margin-top: 20rem;
-  width: 40vw;
+  position: relative;
+  left: 30rem;
+  top: 24rem;
+  width: 48rem;
 }
 
 p {
-  color: #eae0d5;
-  text-align: left;
-  font-size: 2.2rem;
+  font-family: OpenSans;
+  color: #2b2d42;
+  font-size: 1.6rem;
   font-weight: 100;
-  font-family: OpenSansItalic;
-  width: 40vw;
+  text-align: left;
+
+  margin-bottom: 1.4rem;
+  cursor: default;
 }
 span {
-  color: #5e503f;
+  font-weight: 400;
+  color: #625834;
 }
 </style>

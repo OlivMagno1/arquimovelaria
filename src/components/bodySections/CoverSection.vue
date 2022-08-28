@@ -80,26 +80,23 @@ export default {
   bottom: 2rem;
 
   height: auto;
-  width: 30rem;
+  width: 20rem;
 }
 
 .textContainer {
   position: absolute;
-  right: 3rem;
-  bottom: 8rem;
   display: flex;
   flex-flow: column nowrap;
-  align-items: flex-end;
-  text-align: justify;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
   position: absolute;
-  top: 3rem;
-  font-family: OpenSans;
+  top: 8rem;
+  font-family: Quentin;
   /*font-size: clamp(2rem, 0.875rem + 5vw, 4rem); */
-  letter-spacing: 1.5rem;
-  font-size: 10rem;
+  font-size: 9rem;
   font-weight: 100;
   color: #eae0d5;
   cursor: default;
@@ -107,11 +104,13 @@ h1 {
 
 h2 {
   position: absolute;
-  font-family: OpenSansItalic;
+  font-family: Ginerin;
   font-size: clamp(2rem, 0.875rem + 5vw, 4rem);
-  font-weight: 100;
+  letter-spacing: 0.3rem;
+  font-weight: 400;
+  margin-top: 2rem;
   cursor: default;
-  color: #eae0d5;
+  color: #f08c1a;
 }
 
 .slide-fade-enter-active {
@@ -125,13 +124,13 @@ h2 {
 
 .slide-fade-enter-from {
   filter: blur(5px);
-  transform: translateY(4rem);
+  transform: translate(-4rem, -2rem);
   opacity: 0;
 }
 
 .slide-fade-leave-to {
   filter: blur(5px);
-  transform: translateX(3rem);
+  transform: translate(4rem, -2rem);
   opacity: 0;
 }
 
@@ -142,9 +141,9 @@ h2 {
   z-index: -1;
 
   background-image: linear-gradient(
-      to top,
-      rgba(94, 80, 63, 0.62),
-      rgba(198, 172, 143, 0.23)
+      to bottom,
+      rgba(94, 80, 63, 0.52),
+      rgba(10, 9, 8, 0.43)
     ),
     url("@/assets/images/background.jpg");
   background-size: cover;

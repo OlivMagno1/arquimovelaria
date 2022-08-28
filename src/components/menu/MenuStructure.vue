@@ -41,7 +41,7 @@ export default {
   align-items: center;
 
   width: 100vw;
-  height: 14vh;
+  height: 6rem;
   z-index: 99;
 }
 

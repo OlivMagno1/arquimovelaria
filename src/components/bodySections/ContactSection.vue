@@ -1,17 +1,17 @@
 <template>
   <div class="sectionContainer" id="contact">
-    <h2 class="contactTitle">Fale Conosco <span class="line" /></h2>
     <div class="splitSection">
       <div class="textContainer">
-        <p class="textLeft">
+        <h2>Fale Conosco</h2>
+        <p>
           Entre em contato conosco pelo Whatsapp ou Instagram para fazer o seu
           orçamento.
         </p>
-        <p class="textLeft">
+        <p>
           Nossa equipe está sempre pronta para te atender com projetos
           exclusivos e com prazo de entrega de até 90 dias
         </p>
-        <p class="textLeft">
+        <p>
           Aceitamos pagamento em até 10x no cartão, ou à vista com 10% de
           desconto
         </p>
@@ -25,7 +25,7 @@
           <h4>Abrir mapa</h4>
           <img src="@/assets/images/map.png" />
         </a>
-        <p class="textRight">
+        <p class="caption">
           Estamos localizados na Rua Comendador Custodio Vieira, 204, no centro
           de Lorena, SP. Também atendemos no Vale do Paraíba e em toda a capital
           Paulista.
@@ -61,57 +61,32 @@
 .sectionContainer {
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #ddcdbb;
   width: 100vw;
-  margin-top: 55vh;
-  margin-bottom: 30vh;
+  height: 100vh;
 }
 
-.contactTitle {
-  display: flex;
-  align-items: center;
-
+h2 {
   position: relative;
-  margin-left: clamp(1rem, -7.875rem + 35vw, 15rem);
-  margin-right: clamp(1rem, -7.875rem + 35vw, 15rem);
-  height: 8vh;
 
-  margin-top: 1vh;
-  color: #fca17d;
+  font-family: Storylona;
+  font-size: 3rem;
   font-weight: 100;
-  font-size: clamp(1.2rem, -0.4125rem + 3.5vw, 2.6rem);
-}
+  letter-spacing: 0.5rem;
+  margin-bottom: 3rem;
+  color: #f08c1a;
 
-.line {
-  height: 3px;
-  width: 30vw;
-  margin-top: 8px;
-  margin-left: 1rem;
-  background-color: #631e03;
-}
-
-.textLeft {
-  color: #fff;
-  font-size: clamp(0.7rem, 0.30625rem + 1.75vw, 1.4rem);
-  margin: 1rem 4rem;
   cursor: default;
-}
-
-.textRight {
-  color: #fff;
-  font-size: 1rem;
-  margin-top: 1rem;
-  cursor: default;
-  text-align: justify;
 }
 
 .splitSection {
+  position: relative;
+  top: 18rem;
+  left: 24rem;
   display: flex;
   justify-content: space-evenly;
-  width: 100vw;
-  margin-bottom: 8vh;
 }
 
 .textContainer {
@@ -119,6 +94,8 @@
   flex-flow: column nowrap;
   align-items: flex-start;
   text-align: justify;
+  width: 30rem;
+  margin-right: 4rem;
 }
 
 .mapContainer {
@@ -126,6 +103,14 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
+}
+
+p {
+  position: relative;
+  color: #2b2d42;
+  font-size: 1.4rem;
+  cursor: default;
+  margin-bottom: 1rem;
 }
 
 .mapLimiter {
@@ -150,6 +135,12 @@ h4 {
 
 .mapLimiter:hover h4 {
   opacity: 0.6;
+}
+
+.caption {
+  font-size: 1rem;
+  margin: 1rem 0;
+  text-align: justify;
 }
 
 img {

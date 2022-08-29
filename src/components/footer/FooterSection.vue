@@ -23,8 +23,12 @@
     <div class="columnContainer">
       <h2>Contato</h2>
       <div class="linkContainer">
-        <a href="https://www.facebook.com" target="_blank">Facebook</a>
-        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/arquimovelaria" target="_blank">
+          Facebook
+        </a>
+        <a href="https://www.instagram.com/arquimovelaria/" target="_blank">
+          Instagram
+        </a>
         <div class="phoneContainer">
           <p>(12) 98225-0062</p>
           <p>(12) 98113-2496</p>

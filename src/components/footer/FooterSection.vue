@@ -25,8 +25,10 @@
       <div class="linkContainer">
         <a href="https://www.facebook.com" target="_blank">Facebook</a>
         <a href="https://www.instagram.com" target="_blank">Instagram</a>
-        <p>(12) 98225-0062</p>
-        <p>(12) 98113-2496</p>
+        <div class="phoneContainer">
+          <p>(12) 98225-0062</p>
+          <p>(12) 98113-2496</p>
+        </div>
       </div>
     </div>
   </div>
@@ -42,7 +44,7 @@ export default {
 @media screen and (max-width: 1000px) {
   .sectionContainer {
     flex-flow: column nowrap;
-    height: 34vh;
+    height: 27rem;
   }
 
   .logoContainer {
@@ -55,10 +57,10 @@ export default {
   }
 
   .columnContainer {
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
-    width: 80vw;
+    width: 90vw;
     margin: 0.5rem 1.5rem;
   }
 
@@ -68,17 +70,17 @@ export default {
   }
 
   .linkContainer {
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
-    width: 60vw;
+    width: 90vw;
   }
 }
 
 @media screen and (min-width: 1001px) {
   .sectionContainer {
     flex-flow: row nowrap;
-    height: 28vh;
+    height: 20rem;
   }
 
   .logoContainer {
@@ -128,6 +130,7 @@ h2 {
   color: #f08c1a;
   margin-bottom: 0.5rem;
   font-weight: 100;
+  font-size: clamp(0.8rem, 0.52rem +1.2vw, 1.6rem);
 }
 
 p {
@@ -136,7 +139,7 @@ p {
 }
 
 .description {
-  font-size: 0.85rem;
+  font-size: clamp(0.6rem, 0.54rem + 0.25vw, 0.85rem);
 }
 
 .columnContainer {
@@ -147,14 +150,16 @@ p {
   display: flex;
 }
 
-.linkContainer a {
+.linkContainer a,
+.phoneContainer p {
   text-decoration: none;
+  font-size: clamp(0.8rem, 0.707rem + 0.4vw, 1.2rem);
   color: #eae0d5;
 }
 
 .logo {
   height: auto;
-  width: 15rem;
+  width: clamp(8rem, 6.38rem + 7vw, 15rem);
   position: relative;
 }
 

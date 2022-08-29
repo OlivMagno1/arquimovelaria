@@ -55,8 +55,12 @@ export default {
     width: 80vw;
   }
 
+  h1 {
+    left: clamp(1rem, -5.75rem + 30vw, 13rem);
+  }
+
   h2 {
-    position: absolute;
+    left: clamp(1rem, -5.75rem + 30vw, 13rem);
   }
 }
 
@@ -67,20 +71,20 @@ export default {
 }
 
 .sectionContainer {
+  position: relative;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: clamp(11rem, -0.0769rem + 49.23vw, 59rem);
 }
 
 .logo {
   position: absolute;
-  left: 2rem;
-  bottom: 2rem;
+  left: 3.5rem;
+  bottom: 1rem;
 
   height: auto;
-  width: 20rem;
+  width: clamp(7rem, 4rem + 13vw, 20rem);
 }
 
 .textContainer {
@@ -93,10 +97,9 @@ export default {
 
 h1 {
   position: absolute;
-  top: 8rem;
+  top: clamp(2rem, 0.62rem + 6.1vw, 8rem);
   font-family: Quentin;
-  /*font-size: clamp(2rem, 0.875rem + 5vw, 4rem); */
-  font-size: 9rem;
+  font-size: clamp(1.4rem, -0.35rem + 7.8vw, 9rem);
   font-weight: 100;
   color: #eae0d5;
   cursor: default;
@@ -104,11 +107,11 @@ h1 {
 
 h2 {
   position: absolute;
+  top: clamp(5rem, -0.54rem + 25vw, 29rem);
   font-family: Ginerin;
-  font-size: clamp(2rem, 0.875rem + 5vw, 4rem);
+  font-size: clamp(0.8rem, 0.07rem + 3.2vw, 4rem);
   letter-spacing: 0.3rem;
   font-weight: 400;
-  margin-top: 2rem;
   cursor: default;
   color: #f08c1a;
 }
@@ -146,8 +149,8 @@ h2 {
       rgba(10, 9, 8, 0.43)
     ),
     url("@/assets/images/background.jpg");
-  background-size: cover;
-  background-position: 0 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
 
   width: 100vw;
   height: 100vh;

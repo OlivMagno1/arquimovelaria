@@ -24,17 +24,17 @@ export default {
 <style scoped>
 .sectionContainer {
   position: relative;
-  height: 100vh;
+  height: clamp(25rem, 17.15rem + 35vw, 59rem);
   background-color: #ddcdbb;
 }
 
 h2 {
   position: absolute;
-  left: 30rem;
-  top: 18rem;
+  left: clamp(1.6rem, -4.95rem + 29vw, 30rem);
+  top: clamp(8rem, 5.7rem + 10.2vw, 18rem);
 
   font-family: Storylona;
-  font-size: 3rem;
+  font-size: clamp(1rem, 0.54rem + 2vw, 3rem);
   font-weight: 100;
   letter-spacing: 0.5rem;
   color: #f08c1a;
@@ -44,15 +44,15 @@ h2 {
 
 .textContainer {
   position: relative;
-  left: 30rem;
-  top: 24rem;
-  width: 48rem;
+  left: clamp(1.6rem, -4.95rem + 29vw, 30rem);
+  top: clamp(10rem, 6.77rem + 14.3vw, 24rem);
+  width: clamp(18rem, 11.07rem + 31vw, 48rem);
 }
 
 p {
   font-family: OpenSans;
   color: #2b2d42;
-  font-size: 1.6rem;
+  font-size: clamp(0.8rem, 0.62rem + 0.8vw, 1.6rem);
   font-weight: 100;
   text-align: left;
 

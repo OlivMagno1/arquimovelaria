@@ -48,6 +48,10 @@ export default {
 
 <style scoped>
 @media screen and (max-width: 1000px) {
+  h2 {
+    top: 6rem;
+  }
+
   .zoomContainer {
     align-self: center;
     height: 22.5rem;
@@ -69,6 +73,10 @@ export default {
 }
 
 @media screen and (min-width: 1001px) and (max-width: 1200px) {
+  h2 {
+    top: 6rem;
+  }
+
   .portfolioContainer {
     flex-flow: row wrap;
     overflow-y: auto;
@@ -85,6 +93,10 @@ export default {
 }
 
 @media screen and (min-width: 1201px) and (max-width: 1400px) {
+  h2 {
+    top: 4.5rem;
+  }
+
   .portfolioContainer {
     flex-flow: row wrap;
     overflow-y: auto;
@@ -101,6 +113,10 @@ export default {
 }
 
 @media screen and (min-width: 1401px) {
+  h2 {
+    top: 3rem;
+  }
+
   .portfolioContainer {
     flex-flow: row wrap;
     overflow-y: auto;
@@ -119,14 +135,13 @@ export default {
 .sectionContainer {
   position: relative;
   background-color: #eae0d5;
-  height: 100vh;
+  height: clamp(50rem, 47.93rem + 9vw, 59rem);
   width: 100vw;
 }
 
 h2 {
   position: absolute;
   left: clamp(1.6rem, -4.95rem + 29vw, 30rem);
-  top: 3rem;
 
   font-family: Storylona;
   font-size: clamp(1rem, 0.54rem + 2vw, 3rem);

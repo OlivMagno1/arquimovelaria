@@ -54,7 +54,7 @@ p {
   color: #2b2d42;
   font-size: clamp(0.8rem, 0.62rem + 0.8vw, 1.6rem);
   font-weight: 100;
-  text-align: left;
+  text-align: justify;
 
   margin-bottom: 1.4rem;
   cursor: default;

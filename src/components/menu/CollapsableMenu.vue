@@ -4,10 +4,10 @@
       <i class="fa-solid fa-xmark"></i>
     </button>
     <span class="separator" />
-    <a href="#cover" v-smooth-scroll>Início</a>
-    <a href="#intro" v-smooth-scroll>Quem somos</a>
-    <a href="#projects" v-smooth-scroll>Nossos Projetos</a>
-    <a href="#contact" v-smooth-scroll>Contato</a>
+    <a href="#cover" @click="callParent" v-smooth-scroll>Início</a>
+    <a href="#intro" @click="callParent" v-smooth-scroll>Quem somos</a>
+    <a href="#projects" @click="callParent" v-smooth-scroll>Nossos Projetos</a>
+    <a href="#contact" @click="callParent" v-smooth-scroll>Contato</a>
     <span class="separator" />
     <ButtonBar />
   </nav>

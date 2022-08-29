@@ -31,7 +31,7 @@ export default {
 h2 {
   position: absolute;
   left: clamp(1.6rem, -4.95rem + 29vw, 30rem);
-  top: clamp(8rem, 5.7rem + 10.2vw, 18rem);
+  top: clamp(4rem, 0.51rem + 14vw, 18rem);
 
   font-family: Storylona;
   font-size: clamp(1rem, 0.54rem + 2vw, 3rem);
@@ -45,7 +45,7 @@ h2 {
 .textContainer {
   position: relative;
   left: clamp(1.6rem, -4.95rem + 29vw, 30rem);
-  top: clamp(10rem, 6.77rem + 14.3vw, 24rem);
+  top: clamp(6rem, 1.85rem + 18.5vw, 24rem);
   width: clamp(18rem, 11.07rem + 31vw, 48rem);
 }
 

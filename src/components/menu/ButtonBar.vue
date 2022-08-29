@@ -52,6 +52,7 @@ button {
   width: 9.6rem;
   background-color: rgba(0, 0, 0, 0);
   border: 0;
+  margin: 0.5rem;
 
   transition: 0.2s;
 }

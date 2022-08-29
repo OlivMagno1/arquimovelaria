@@ -8,7 +8,7 @@
       </p>
       <p class="description">
         Localizados no centro de Lorena, atendemos à todo o Vale do Paraíba e
-        Capital Paulista
+        Capital Paulista.
       </p>
       <p class="description">Todos os direitos reservados.</p>
     </div>
@@ -49,7 +49,7 @@ export default {
 
   .logoContainer {
     flex-flow: row wrap;
-    width: 80vw;
+    width: 90vw;
   }
 
   .description {
@@ -61,11 +61,10 @@ export default {
     justify-content: flex-start;
     align-items: center;
     width: 90vw;
-    margin: 0.5rem 1.5rem;
+    margin: 0.5rem 0rem;
   }
 
   .columnContainer h2 {
-    align-self: left;
     width: 18vw;
   }
 
@@ -119,7 +118,7 @@ export default {
   display: flex;
   align-items: flex-start;
   text-align: justify;
-  margin: 1.5rem 3rem;
+  margin: 1rem 1rem;
 }
 
 .logoContainer img {
@@ -130,7 +129,7 @@ h2 {
   color: #f08c1a;
   margin-bottom: 0.5rem;
   font-weight: 100;
-  font-size: clamp(0.8rem, 0.52rem +1.2vw, 1.6rem);
+  font-size: clamp(0.8rem, 0.52rem + 1.2vw, 1.6rem);
 }
 
 p {

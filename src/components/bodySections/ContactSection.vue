@@ -8,10 +8,11 @@
       </p>
       <p>
         Nossa equipe está sempre pronta para te atender com projetos exclusivos
-        e com prazo de entrega de até 90 dias
+        e com prazo de entrega de até 90 dias.
       </p>
       <p>
         Aceitamos pagamento em até 10x no cartão, ou à vista com 10% de desconto
+        .
       </p>
     </div>
     <div class="mapContainer">

@@ -24,7 +24,7 @@ export default {
 <style scoped>
 .sectionContainer {
   position: relative;
-  height: clamp(25rem, 17.15rem + 35vw, 59rem);
+  height: clamp(26rem, 17.15rem + 35vw, 59rem);
   background-color: #ddcdbb;
 }
 

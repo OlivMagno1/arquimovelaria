@@ -81,6 +81,6 @@ button {
 
 .slide-enter-from,
 .slide-leave-to {
-  transform: translateX(20vw);
+  transform: translateX(18rem);
 }
 </style>

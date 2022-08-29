@@ -23,24 +23,10 @@ export default {
 }
 
 @font-face {
-  src: url(@/assets/fonts/Athene.otf);
-
-  font-family: "Athene";
-  font-weight: 400;
-}
-
-@font-face {
   src: url(@/assets/fonts/Ginerin.otf);
 
   font-family: "Ginerin";
   font-weight: 400;
-}
-
-@font-face {
-  src: url(@/assets/fonts/OpenSans-Light.ttf);
-
-  font-family: "OpenSans";
-  font-weight: 100;
 }
 
 @font-face {
@@ -51,23 +37,9 @@ export default {
 }
 
 @font-face {
-  src: url(@/assets/fonts/OpenSans-Bold.ttf);
-
-  font-family: "OpenSans";
-  font-weight: 600;
-}
-
-@font-face {
   src: url(@/assets/fonts/Quentin.otf);
 
   font-family: "Quentin";
-  font-weight: 400;
-}
-
-@font-face {
-  src: url(@/assets/fonts/Mojito.otf);
-
-  font-family: "Mojito";
   font-weight: 400;
 }
 

@@ -2,12 +2,10 @@
   <div class="sectionContainer" id="projects">
     <h2>Nossos projetos</h2>
     <div class="zoomContainer">
-      <Transition name="fade" appear>
-        <img
-          class="zoomedPhoto"
-          :src="require(`@/assets/images/projects/${actual}.jpg`)"
-        />
-      </Transition>
+      <img
+        class="zoomedPhoto"
+        :src="require(`@/assets/images/projects/${actual}.jpg`)"
+      />
     </div>
     <div class="portfolioContainer">
       <div
@@ -16,6 +14,7 @@
         @click="actual = image"
       >
         <img
+          title="Clique para ver a imagem ampliada"
           class="portfolioPhoto"
           :src="require(`@/assets/images/projects/${image}.jpg`)"
         />

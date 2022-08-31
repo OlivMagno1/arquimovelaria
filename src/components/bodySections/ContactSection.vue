@@ -20,6 +20,7 @@
         href="https://goo.gl/maps/1QyB3xnexRTM4e8X6"
         target="_blank"
         class="mapLimiter"
+        alt="Mapa da nossa localização"
       >
         <h4>Abrir mapa</h4>
         <img src="@/assets/images/map.png" />
@@ -129,8 +130,9 @@ p {
 h4 {
   position: absolute;
   opacity: 0;
-  color: #631e03;
+  color: #2b2d42;
   font-size: 2rem;
+  margin: 0.7rem;
 }
 
 .mapLimiter:hover h4 {

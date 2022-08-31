@@ -2,10 +2,13 @@
   <div class="sectionContainer" id="projects">
     <h2>Nossos projetos</h2>
     <div class="zoomContainer">
-      <img
-        class="zoomedPhoto"
-        :src="require(`@/assets/images/projects/${actual}.jpg`)"
-      />
+      <Transition name="fade" appear>
+        <img
+          class="zoomedPhoto"
+          :key="{ actual }"
+          :src="require(`@/assets/images/projects/${actual}.jpg`)"
+        />
+      </Transition>
     </div>
     <div class="portfolioContainer">
       <div
@@ -152,24 +155,25 @@ h2 {
 }
 
 .zoomContainer {
-  position: absolute;
-  left: clamp(1.6rem, -2.88rem + 19.9vw, 21rem);
-  top: 9rem;
-
   height: clamp(22.5rem, 17.3rem + 23vw, 45rem);
 }
 
 .portfolioContainer {
   display: flex;
-  position: relative;
+  position: absolute;
 }
 
 .zoomedPhoto {
+  position: absolute;
+  left: clamp(1.6rem, -2.88rem + 19.9vw, 21rem);
+  top: 9rem;
+
   max-width: inherit;
   max-height: inherit;
   height: inherit;
   width: inherit;
   object-fit: cover;
+  transition: 0.2s;
 }
 
 .portfolioPhoto {
@@ -195,5 +199,15 @@ h2 {
 ::-webkit-scrollbar-thumb {
   background-color: #2b2d42;
   border-radius: 7px;
+}
+
+.fade-leave-active,
+.fade-enter-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
